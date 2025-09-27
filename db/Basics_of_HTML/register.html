@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h2>Reqester Form</h2>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone" required /><br />
+        <h3>Select Sem</h3>
+            <label for="sem">Sem:</label>
+            <select id="sem" name="sem">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br /><br />
+        
+        <h3>Select Branch</h3>
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch">
+                <option value="is">IS</option>
+                <option value="aiml">AIML</option>
+                <option value="cs">CS</option>
+                <option value="ec">EC</option>
+            </select><br /><br />
+
+
+        <h>Select Gender</h3><br>
+
+           <form action="/submit" method="POST">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male"><br>
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+
+        <h3>Terms and Condition</h3>
+        <form action="/submit" method="POST">
+            <label>
+                <input type="checkbox" name="terms" required /> I have learned HTML
+            </label><br /><br />
+
+            <form action="/submit" method="POST">
+            <label>
+                <input type="checkbox" name="terms" required /> I have learned CSS
+            </label><br /><br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
